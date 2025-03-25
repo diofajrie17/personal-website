@@ -13,37 +13,4 @@
       <image:caption>Dio Fajrie Fadlullah is a Software Engineer at Mekari and a Professional Photographer based in Jakarta, Indonesia</image:caption>
     </image:image>
   </url>
-  <url>
-    <loc>https://diofajrie.site/#engineering</loc>
-    <lastmod>2024-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://diofajrie.site/profile.jpg</image:loc>
-      <image:title>Software Engineering Portfolio - Dio Fajrie Fadlullah</image:title>
-      <image:caption>Software Engineering projects and experience by Dio Fajrie Fadlullah</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://diofajrie.site/#photography</loc>
-    <lastmod>2024-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://diofajrie.site/profile.jpg</image:loc>
-      <image:title>Photography Portfolio - Dio Fajrie Fadlullah</image:title>
-      <image:caption>Photography portfolio and services by Dio Fajrie Fadlullah</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://diofajrie.site/#contact</loc>
-    <lastmod>2024-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://diofajrie.site/profile.jpg</image:loc>
-      <image:title>Contact Dio Fajrie Fadlullah</image:title>
-      <image:caption>Get in touch with Dio Fajrie Fadlullah for collaboration opportunities</image:caption>
-    </image:image>
-  </url>
 </urlset> 
