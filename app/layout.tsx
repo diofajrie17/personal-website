@@ -1,13 +1,14 @@
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/app/providers/theme-provider"
 import "./globals.css"
+import { structuredData } from "./structured-data"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Dio Fajrie Fadlullah - Software Engineer & Photographer",
-  description: "Personal website of Dio Fajrie Fadlullah, a Software Engineer and Photographer based in Jakarta, Indonesia.",
-  keywords: "Software Engineer, Photographer, Web Development, Jakarta, Indonesia",
+  title: "Dio Fajrie Fadlullah | Software Engineer & Photographer in Jakarta",
+  description: "Dio Fajrie Fadlullah is a Software Engineer and Photographer based in Jakarta, Indonesia. Specializing in web development and professional photography.",
+  keywords: "Dio Fajrie Fadlullah, Software Engineer, Photographer, Web Developer, Jakarta, Indonesia, Personal Portfolio, Professional Developer, Tech Professional",
   authors: [{ name: "Dio Fajrie Fadlullah" }],
   creator: "Dio Fajrie Fadlullah",
   publisher: "Dio Fajrie Fadlullah",
@@ -21,22 +22,22 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://diofajrie.site',
-    title: 'Dio Fajrie Fadlullah - Software Engineer & Photographer',
-    description: 'Personal website of Dio Fajrie Fadlullah, a Software Engineer and Photographer based in Jakarta, Indonesia.',
+    title: 'Dio Fajrie Fadlullah | Software Engineer & Photographer in Jakarta',
+    description: 'Dio Fajrie Fadlullah is a Software Engineer and Photographer based in Jakarta, Indonesia. Specializing in web development and professional photography.',
     siteName: 'Dio Fajrie Fadlullah',
     images: [
       {
         url: '/profile.jpg',
         width: 1200,
         height: 630,
-        alt: 'Dio Fajrie Fadlullah',
+        alt: 'Dio Fajrie Fadlullah - Software Engineer & Photographer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dio Fajrie Fadlullah - Software Engineer & Photographer',
-    description: 'Personal website of Dio Fajrie Fadlullah, a Software Engineer and Photographer based in Jakarta, Indonesia.',
+    title: 'Dio Fajrie Fadlullah | Software Engineer & Photographer in Jakarta',
+    description: 'Dio Fajrie Fadlullah is a Software Engineer and Photographer based in Jakarta, Indonesia. Specializing in web development and professional photography.',
     images: ['/profile.jpg'],
     creator: '@yourtwitterhandle',
   },
@@ -54,6 +55,9 @@ export const metadata = {
   verification: {
     google: 'your-google-site-verification',
   },
+  alternates: {
+    canonical: 'https://diofajrie.site',
+  },
 }
 
 export default function RootLayout({
@@ -63,6 +67,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
