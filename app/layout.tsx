@@ -53,7 +53,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-site-verification',
+    google: 'vNREoIpugc84f0Hi4zS6Q4m7rP8eUhsKwssfXI-j75Y',
   },
   alternates: {
     canonical: 'https://diofajrie.site',
