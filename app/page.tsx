@@ -80,18 +80,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex gap-4 pt-6">
-            <Link href="#engineering">
-              <Button size="lg" className="group relative overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 pt-6">
+            <Link href="#engineering" className="w-full sm:w-auto">
+              <Button size="default" className="w-full sm:w-auto group relative overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300">
                 <span className="relative z-10">View Engineering Work</span>
-                <ChevronRight className="relative z-10 ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ChevronRight className="relative z-10 ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                 <div className="absolute inset-0 bg-white dark:bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               </Button>
             </Link>
-            <Link href="#photography">
-              <Button size="lg" variant="outline" className="group border-2 hover:border-purple-500/50 dark:hover:border-purple-400/50">
+            <Link href="#photography" className="w-full sm:w-auto">
+              <Button size="default" variant="outline" className="w-full sm:w-auto group border-2 hover:border-purple-500/50 dark:hover:border-purple-400/50">
                 View Photography
-                <Camera className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                <Camera className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
               </Button>
             </Link>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-center gap-2 group-hover:text-green-500 transition-colors duration-300">💎 Ruby on Rails</li>
+                  <li className="flex items-center gap-2 group-hover:text-green-500 transition-colors duration-300">�� Ruby on Rails</li>
                   <li className="flex items-center gap-2 group-hover:text-green-500 transition-colors duration-300">🚀 Go</li>
                   <li className="flex items-center gap-2 group-hover:text-green-500 transition-colors duration-300">🐘 Laravel (PHP)</li>
                   <li className="flex items-center gap-2 group-hover:text-green-500 transition-colors duration-300">🐍 Python</li>
@@ -584,29 +584,29 @@ export default function Home() {
               <p className="text-lg text-muted-foreground">
                 Interested in working together? Feel free to reach out through any of these channels:
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
                 <a href="mailto:diofajriefadlullah17@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-purple-500/50 dark:hover:border-purple-400/50">
+                  <Button variant="outline" size="default" className="group relative overflow-hidden border-2 hover:border-purple-500/50 dark:hover:border-purple-400/50">
                     <span className="relative z-10 flex items-center gap-2">
-                      <Mail className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                      <Mail className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
                       Email
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </Button>
                 </a>
                 <a href="https://www.linkedin.com/in/diofajrie/" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-blue-500/50 dark:hover:border-blue-400/50">
+                  <Button variant="outline" size="default" className="group relative overflow-hidden border-2 hover:border-blue-500/50 dark:hover:border-blue-400/50">
                     <span className="relative z-10 flex items-center gap-2">
-                      <Linkedin className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                      <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
                       LinkedIn
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </Button>
                 </a>
                 <a href="https://github.com/diofajrie17" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-gray-500/50 dark:hover:border-gray-400/50">
+                  <Button variant="outline" size="default" className="group relative overflow-hidden border-2 hover:border-gray-500/50 dark:hover:border-gray-400/50">
                     <span className="relative z-10 flex items-center gap-2">
-                      <Github className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                      <Github className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
                       GitHub
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-500/10 to-gray-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -614,18 +614,18 @@ export default function Home() {
                 </a>
                 <div className="flex gap-2">
                   <a href="https://www.instagram.com/dio.fajrie/" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-pink-500/50 dark:hover:border-pink-400/50">
+                    <Button variant="outline" size="default" className="group relative overflow-hidden border-2 hover:border-pink-500/50 dark:hover:border-pink-400/50">
                       <span className="relative z-10 flex items-center gap-2">
-                        <Instagram className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                        <Instagram className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
                         Personal
                       </span>
                       <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </Button>
                   </a>
                   <a href="https://www.instagram.com/masdo.y/" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="lg" className="group relative overflow-hidden border-2 hover:border-pink-500/50 dark:hover:border-pink-400/50">
+                    <Button variant="outline" size="default" className="group relative overflow-hidden border-2 hover:border-pink-500/50 dark:hover:border-pink-400/50">
                       <span className="relative z-10 flex items-center gap-2">
-                        <Camera className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                        <Camera className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
                         Photography
                       </span>
                       <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
