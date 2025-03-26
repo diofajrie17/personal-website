@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://diofajrie.com/sitemap.xml
+Sitemap: https://diofajrie.site/sitemap.xml
 
 # Disallow admin or private routes if you have any
 Disallow: /api/
